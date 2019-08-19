@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "sensor",
+            "otherEntityName": "sensor",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "street"
+        },
+        {
+            "relationshipName": "signale",
+            "otherEntityName": "signale",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "street"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "streetName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "streetType",
+            "fieldType": "StreetType",
+            "fieldValues": "AUTOSTRADA,STRADASTATALE,STRADAREGIONALE,STRADACOMUNALE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20190730090052",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "street",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "micro2"
+}
