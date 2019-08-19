@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+      <table>
+        <tr>
+          <th>
+            Signalename
+          </th>
+          <th>
+            Signaletype
+          </th>
+          <th>
+            longSignale
+          </th>
+          <th>
+            latSignale
+          </th>
+          <th>
+            Edit
+          </th>
+          <th>
+            Signale
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input placeholder="signalename" [(ngModel)]="signaletoinsert.nameSignale">
+          </td>
+         
+          <td>
+            <select placeholder="signaletype" [(ngModel)]="signaletoinsert.signaletype">
+              <option value="SEMAFORO">SEMAFORO</option>
+              <option value="STOP">STOP</option>
+              <option value="ZTL">ZTL</option>
+            </select>
+          </td>
+          <td>
+            <input placeholder="longsignale" [(ngModel)]="signaletoinsert.longSignale">
+          </td>
+          <td>
+            <input placeholder="latsignale" [(ngModel)]="signaletoinsert.latSignale">
+          </td>
+          <td>
+            <button (click)="insert(signaletoinsert)">Insert</button>
+          </td>
+          <td>
+            <button (click)="clear()">Clear</button>
+          </td>
+        </tr>
+        <tr *ngFor="let signale of signales">
+          <td>
+            <input [(ngModel)]="signale.nameSignale">
+          </td>
+          
+          <td>
+            <select [(ngModel)]="signale.signaletype">
+              <option [selected]="signale.signaletype===STOP" value="STOP">STOP</option>
+              <option [selected]="signale.signaletype===SEMAFORO" value="SEMAFORO">SEMAFORO</option>
+              <option [selected]="signale.signaletype===ZTL" value="ZTL">ZTL</option>
+            </select>
+          </td>
+          <td>
+            <input [(ngModel)]="signale.longSignale">
+          </td>
+          <td>
+            <input [(ngModel)]="signale.latSignale">
+          </td>
+          <td>
+            <button (click)=update(signale)>Save</button>
+          </td>
+          <td>
+            <button (click)="delete(signale)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

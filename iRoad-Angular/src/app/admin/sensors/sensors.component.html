@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+      <table>
+        <tr>
+          <th>
+            Sensortype
+          </th>
+          <th>
+            longSensor
+          </th>
+          <th>
+            latSensor
+          </th>
+          <th>
+            Edit
+          </th>
+          <th>
+            Sensor
+          </th>
+        </tr>
+        <tr>
+            <td>
+                <select placeholder="sensortype" [(ngModel)]="sensortoinsert.sensortype">
+                  <option value="Autovelox">Autovelox</option>
+                  <option value="Dinamometro">Dinamometro</option>
+                  <option value="Anemometro">Anemometro</option>
+                </select>
+              </td>
+          <td>
+            <input placeholder="longSensor" [(ngModel)]="sensortoinsert.longSensor">
+
+          </td>
+          <td>
+            <input placeholder="latSensor" [(ngModel)]="sensortoinsert.latSensor">
+          </td>
+          
+          <td>
+            <button (click)="insert(sensortoinsert)">Insert</button>
+          </td>
+          <td>
+            <button (click)="clear()">Clear</button>
+          </td>
+        </tr>
+        <tr *ngFor="let sensor of sensors">
+          <td>
+            <select [(ngModel)]="sensor.sensortype">
+              <option [selected]="sensor.sensortype===Autovelox" value="Autovelox">Autovelox</option>
+              <option [selected]="sensor.sensortype===Dinamometro" value="Dinamometro">Dinamometro</option>
+              <option [selected]="sensor.sensortype===Anemometro" value="Anemometro">Anemometro</option>
+            </select>
+          </td>
+          <td>
+            <input [(ngModel)]="sensor.longSensor">
+          </td>
+          <td>
+            <input [(ngModel)]="sensor.latSensor">
+          </td>
+          <td>
+            <button (click)=update(sensor)>Save</button>
+          </td>
+          <td>
+            <button (click)="delete(sensor)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

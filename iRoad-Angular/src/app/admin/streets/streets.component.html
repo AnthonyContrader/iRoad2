@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+      <table>
+        <tr>
+          <th>
+            Streetname
+          </th>
+         
+          <th>
+            Streettype
+          </th>
+          <th>
+            Edit
+          </th>
+          <th>
+            Street
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input placeholder="streetname" [(ngModel)]="streettoinsert.streetname">
+          </td>
+         
+          <td>
+            <select placeholder="streettype" [(ngModel)]="streettoinsert.streettype">
+              <option value="AUTOSTRADA">AUTOSTRADA</option>
+              <option value="STRADASTATALE">STRADASTATALE</option>
+              <option value="STRADAREGIONALE">STRADAREGIONALE</option>
+              <option value="STRADACOMUNALE">STRADACOMUNALE</option>
+              
+            </select>
+          </td>
+          <td>
+            <button (click)="insert(streettoinsert)">Insert</button>
+          </td>
+          <td>
+            <button (click)="clear()">Clear</button>
+          </td>
+        </tr>
+        <tr *ngFor="let street of streets">
+          <td>
+            <input [(ngModel)]="street.streetname">
+          </td>
+         
+          <td>
+            <select [(ngModel)]="street.streettype">
+              <option [selected]="street.streettype===AUTOSTRADA" value="AUTOSTRADA">AUTOSTRADA</option>
+              <option [selected]="street.streettype===STRADASTATALE" value="STRADASTATALE">STRADASTATALE</option>
+              <option [selected]="street.streettype===STRADAREGIONALE" value="STRADAREGIONALE">STRADAREGIONALE</option>
+              <option [selected]="street.streettype===STRADACOMUNALE" value="STRADACOMUNALE">STRADACOMUNALE</option>
+            </select>
+          </td>
+          <td>
+            <button (click)=update(street)>Save</button>
+          </td>
+          <td>
+            <button (click)="delete(street)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

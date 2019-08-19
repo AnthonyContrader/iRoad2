@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+      <table>
+        <tr>
+          <th>
+            Output
+          </th>
+          <th>
+            Edit
+          </th>
+          <th>
+            Screen
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input placeholder="output" [(ngModel)]="screentoinsert.output">
+          </td>
+          
+          <td>
+            <button (click)="insert(screentoinsert)">Insert</button>
+          </td>
+          <td>
+            <button (click)="clear()">Clear</button>
+          </td>
+        </tr>
+        <tr *ngFor="let screen of screens">
+          <td>
+            <input [(ngModel)]="screen.output">
+          </td>
+          
+          
+          <td>
+            <button (click)=update(screen)>Save</button>
+          </td>
+          <td>
+            <button (click)="delete(screen)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

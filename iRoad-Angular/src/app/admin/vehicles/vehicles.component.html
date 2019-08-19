@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-11">
+      <table>
+        <tr>
+          <th>
+            Latitudine veicolo
+          </th>
+          <th>
+            Longitudine Veicolo
+          </th>
+          <th>
+            Tipo di Veicolo
+          </th>
+          <th>
+            Nome del Veicolo
+          </th>
+          <th>
+            Peso Veicolo
+          </th>
+          <th>
+            velocità Veicolo
+          </th>
+          <th> 
+            ID User
+          </th>
+          <th colspan="2">
+            Edit
+          </th>
+          <th>
+            Vehicle
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input placeholder="latVehicle" [(ngModel)]="vehicletoinsert.latVehicle">
+          </td>
+          <td>
+            <input placeholder="longVehicle" [(ngModel)]="vehicletoinsert.longVehicle">
+          </td>
+          <td>
+            <select placeholder="vehicletype" [(ngModel)]="vehicletoinsert.vehicletype">
+              <option value="Autoveicolo">Autoveicolo</option>
+              <option value="Autocarro">Autocarro</option>
+              <option value="Motoveicolo">Motoveicolo</option>
+              <option value="Velocipede">Velocipede</option>
+            </select>
+          </td>
+          <td>
+            <input placeholder="nameVehicle" [(ngModel)]="vehicletoinsert.nameVehicle">
+          </td>
+          <td>
+            <input placeholder="weightVehicle" [(ngModel)]="vehicletoinsert.weightVehicle">
+          </td>
+          <td>
+            <input placeholder="speedVehicle" [(ngModel)]="vehicletoinsert.speedVehicle">
+          </td>
+          <td>
+            <input placeholder="idUser" [(ngModel)]="vehicletoinsert.id">
+          </td>
+          <td>
+            <button (click)="insert(vehicletoinsert)">Insert</button>
+          </td>
+          <td>
+            <button (click)="clear()">Clear</button>
+          </td>
+        </tr>
+      
+        <tr *ngFor="let vehicle of vehicles">
+          <td>
+            <input [(ngModel)]="vehicle.latVehicle">
+          </td>
+          <td>
+            <input [(ngModel)]="vehicle.longVehicle">
+          </td>
+          <td>
+            <select [(ngModel)]="vehicle.vehicletype">
+                <option [selected]="vehicle.vehicletype===Autoveicolo" value="Autoveicolo">Autoveicolo</option>
+                <option [selected]="vehicle.vehicletype===Autocarro" value="Autocarro">Autocarro</option>
+                <option [selected]="vehicle.vehicletype===Motoveicolo" value="Motoveicolo">Motoveicolo</option>
+                <option [selected]="vehicle.vehicletype===Velocipede" value="Velocipede">Velocipede</option>
+            </select>
+          </td>
+          <td>
+            <input [(ngModel)]="vehicle.nameVehicle">
+          </td>
+          <td>
+            <input [(ngModel)]="vehicle.weightVehicle">
+          </td>
+          <td>
+            <input [(ngModel)]="vehicle.speedVehicle">
+          </td>
+          <td>
+            <input placeholder="idUser" [(ngModel)]="vehicletoinsert.id">
+          </td>
+          <td>
+            <button (click)=update(vehicle)>Save</button>
+          </td>
+          <td>
+            <button (click)="delete(vehicle)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+export enum Streettype {
+    AUTOSTRADA,
+    STRADASTATALE,
+    STRADAREGIONALE,
+    STRADACOMUNALE,
+}
