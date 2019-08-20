@@ -3,6 +3,7 @@ import { LoginDTO } from 'src/dto/logindto';
 import { NgForm } from '@angular/forms';
 import { UserService } from 'src/service/user.service';
 import { Router } from '@angular/router';
+import { UserDTO } from 'src/dto/userdto';
 
 @Component({
   selector: 'app-login',
@@ -12,47 +13,37 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginDTO: LoginDTO;
-  isLoginCollapsed = false;
-  isSignuptCollapsed = false;
 
   constructor(private service: UserService, private router: Router) { }
 
   ngOnInit() {
   }
 
+  register (): void{
+      this.router.navigate(['/register']);
+  }
+
   login(f: NgForm): void {
     this.loginDTO = new LoginDTO(f.value.username, f.value.password);
 
-    this.service.login(this.loginDTO).subscribe((user) => {
+    this.service.login(this.loginDTO).subscribe((token : any) => {
+      localStorage.setItem("autoken", JSON.stringify({ "authorities": token.id_token }));
+      localStorage.setItem("currentUser", JSON.stringify({ "authorities": token.id_token }));
+      this.service.userLogged(this.loginDTO.username).subscribe((user:UserDTO)=>{
 
-      if (user != null) {
-        localStorage.setItem('currentUser', JSON.stringify(user));
-
-        switch (user.usertype.toString()) {
-          case 'ADMIN': {
+        if (user != null) {
+          localStorage.setItem('currentUser', JSON.stringify(user));
+          console.log(user.authorities);
+          if(user.authorities == "ROLE_ADMIN" ) {
             this.router.navigate(['/admin-dashboard']);
-            break;
           }
-          case 'USER': {
+          if(user.authorities == "ROLE_USER") {
             this.router.navigate(['/user-dashboard']);
-            break;
           }
-          default:
-            this.router.navigate(['/login']);
-        }
+         }else{
+            alert("Wrong username or password");
+          }
+        });
+      });
       }
-    });
   }
-  logincollapse() {
-    if (this.isLoginCollapsed === false) {
-      this.isLoginCollapsed = true;
-    } else { this.isLoginCollapsed = false; }
-  }
-
-  signupcollapse() {
-    if (this.isSignuptCollapsed === false) {
-      this.isSignuptCollapsed = true;
-    } else { this.isSignuptCollapsed = false; }
-  }
-
-}

@@ -5,11 +5,15 @@ export class UserDTO {
 
    id: number;
 
+   login : string;
+
    username: string;
 
    password: string;
 
-   usertype: Usertype;
+   authorities: string;
+
+   activated: boolean;
 
 }
 

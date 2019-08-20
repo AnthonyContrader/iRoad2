@@ -11,6 +11,8 @@ export interface Service<DTO> {
 
     insert(dto: DTO): Observable<any>;
 
+    deleteUser(login: string): Observable<DTO> ;
+
     getAll(): Observable<DTO[]>;
 
 }
