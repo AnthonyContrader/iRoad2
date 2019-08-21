@@ -47,10 +47,10 @@
       padding-top: 12px;
       height: inherit;
       width: 100%;
-      background-color: #1e282d !important;
+      background-color:  rgba(3, 34, 22, 0.938)  !important;
   }
   
   i:hover{
-    background-color: rgba(26, 43, 36, 0.938);
+    background-color: rgba(113, 160, 140, 0.938);
 
   }
