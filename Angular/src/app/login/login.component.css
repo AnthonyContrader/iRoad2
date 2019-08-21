@@ -5,7 +5,7 @@ form{
     width: 55%;
     padding: 10px;
     border-radius:0;
-    border-color: rgb(20, 107, 220);
+    border-color:rgba(19, 129, 87, 0.938);;
 }
 
 img{
@@ -17,10 +17,10 @@ img{
 
 input, input:hover, input::selection, input:checked, input:focus{
     border: 0;
-    background-color: rgba(44, 44, 177, 0.822);
+    background-color: rgba(19, 129, 87, 0.938);
     border-radius: 0;
     color: white;
-    border-bottom: 1px solid rgba(233, 16, 16, 0.781);
+    border-bottom: 1px solid rgba(19, 129, 87, 0.938);;
     margin: 0px;
 }
 
@@ -32,14 +32,14 @@ input::placeholder{
 }
 .form-control{
 border: none;
-background-color: rgba(44, 44, 177, 0.822);
+background-color:rgba(19, 129, 87, 0.938);;
 color: white;
 border-bottom: 1px solid white;
 }
 
 .login{
 border: none;
-background-color: rgba(44, 44, 177, 0.822);
+background-color:rgba(19, 129, 87, 0.938);;
 color: white;
 border: 1px solid white;
 border-radius: 2px;
@@ -68,10 +68,10 @@ color: white;
 }
 
 .row1 {
-    background-color: rgb(11, 12, 87)
+    background-color: rgba(19, 129, 87, 0.938);
 }
 
 .row2{
-    background-color: rgba(44, 44, 177, 0.822);
+    background-color: rgba(19, 129, 87, 0.938);
 
 }
