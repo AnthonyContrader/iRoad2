@@ -30,7 +30,7 @@ tr {
 }
 
 th {
-	background-color:rgba(21, 19, 129, 0.938);
+	background-color:rgba(19, 129, 87, 0.938);
 	color: #ffffff;
 }
 
@@ -44,11 +44,11 @@ input, select{
 }
 
 input:hover,  input:active, input:focus{
-    border: 2px solid crimson;
+    border: 2px solid rgb(14, 68, 56);
 }
 
 button:hover{
-    background-color: crimson;
+    background-color: rgb(14, 68, 56);
 }
 .bottoni{
 	background-color: white;

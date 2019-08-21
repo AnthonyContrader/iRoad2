@@ -1,6 +1,6 @@
 
 #header{
-    background-color:   rgba(12, 12, 129, 0.822);
+    background-color:  rgba(19, 129, 87, 0.938);
 }
 .searchContainer {
     margin-top: 10px;
@@ -51,6 +51,6 @@
   }
   
   i:hover{
-    background-color: crimson;
+    background-color: rgba(26, 43, 36, 0.938);
 
   }
