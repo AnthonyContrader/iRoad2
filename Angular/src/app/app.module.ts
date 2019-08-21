@@ -12,6 +12,8 @@ import { CompanyRoutingModule } from './company/company-routing.module';
 import { CandidatoModule } from './candidato/candidato.module';
 import { CompanyModule } from './company/company.module';
 import { RegisterModule } from './register/register.module';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 /** 
@@ -23,7 +25,8 @@ import { RegisterModule } from './register/register.module';
 */
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { RegisterModule } from './register/register.module';
     CompanyRoutingModule,
     CandidatoModule,
     CompanyModule,
-    CompanyRoutingModule
+    CompanyRoutingModule,
+
+    ReactiveFormsModule //2
   ],
   providers: [],
   bootstrap: [AppComponent]

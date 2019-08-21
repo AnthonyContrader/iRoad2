@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginDTO } from 'src/dto/logindto';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormControl, FormGroup } from '@angular/forms';
 import { UserService } from 'src/service/user.service';
 import { Router } from '@angular/router';
 import { UserDTO } from 'src/dto/userdto';
+
+
 
 @Component({
   selector: 'app-login',
@@ -13,8 +15,16 @@ import { UserDTO } from 'src/dto/userdto';
 export class LoginComponent implements OnInit {
 
   loginDTO: LoginDTO;
+  reactiveForm: FormGroup;
 
-  constructor(private service: UserService, private router: Router) { }
+  constructor(private service: UserService, private router: Router) { 
+    this.reactiveForm = new FormGroup ({
+      username: new FormControl(''),
+      password: new FormControl(''),
+} )
+
+}
+  
 
   ngOnInit() {
   }
