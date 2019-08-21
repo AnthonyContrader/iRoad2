@@ -1,0 +1,77 @@
+form{
+    margin-top:100px;
+    margin-left: 150px;
+    margin-bottom: 180px;
+    width: 55%;
+    padding: 10px;
+    border-radius:0;
+    border-color: rgb(20, 107, 220);
+}
+
+img{
+    position: inherit;
+    width:80%;
+    margin: 12%;
+}
+
+
+input, input:hover, input::selection, input:checked, input:focus{
+    border: 0;
+    background-color: rgba(44, 44, 177, 0.822);
+    border-radius: 0;
+    color: white;
+    border-bottom: 1px solid rgba(233, 16, 16, 0.781);
+    margin: 0px;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+input::placeholder{
+    color: white;
+}
+.form-control{
+border: none;
+background-color: rgba(44, 44, 177, 0.822);
+color: white;
+border-bottom: 1px solid white;
+}
+
+.login{
+border: none;
+background-color: rgba(44, 44, 177, 0.822);
+color: white;
+border: 1px solid white;
+border-radius: 2px;
+}
+
+p{
+font-size: 14px;
+color: white;
+}
+
+.titolo {
+    font-size: 120px;
+    color: white;
+    font-family: Abel-Regular;
+}
+
+@font-face {
+    font-family: Abel-Regular;
+    src: url('../../assets/Abel-Regular.ttf');
+}
+
+.pulsante{
+    outline-style: solid;
+    outline-color: white;
+    margin-left: 100px;
+}
+
+.row1 {
+    background-color: rgb(11, 12, 87)
+}
+
+.row2{
+    background-color: rgba(44, 44, 177, 0.822);
+
+}

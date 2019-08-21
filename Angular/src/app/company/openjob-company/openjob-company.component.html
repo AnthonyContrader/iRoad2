@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="row mt-5">
+      <div class="col-md-1">
+        
+      </div>
+      <div class="col-md-10">
+        <table>
+          <tr>
+            <th>
+              Titolo
+            </th>
+            <th>
+              Descrizione
+            </th>
+            <th>
+              Requisiti
+            </th>
+            <th>
+              Company_ID
+            </th>
+            <th colspan="2">
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input placeholder="titolo" [(ngModel)]="openjobtoinsert.titolo">
+            </td>
+            <td>
+              <input placeholder="descrizione" [(ngModel)]="openjobtoinsert.descrizione">
+            </td>
+            <td>
+              <input placeholder="requisiti" [(ngModel)]="openjobtoinsert.requisiti">
+            </td>
+            <td>
+              <input placeholder="companyId" [(ngModel)]="openjobtoinsert.companyId">
+            </td>
+            <td>
+              <button class="bottoni"(click)="insert(openjobtoinsert)">Insert</button>
+            </td>
+            <td>
+              <button class="bottoni"(click)="clear()">Clear</button>
+            </td>
+          </tr>
+          <tr *ngFor="let openjob of list">
+            <td>
+              <input [(ngModel)]="openjob.titolo">
+            </td>
+            <td>
+              <input [(ngModel)]="openjob.descrizione">
+            </td>
+            <td>
+                <input [(ngModel)]="openjob.requisiti">
+              </td>  
+              <td>
+                <input [(ngModel)]="openjob.companyId">
+              </td>          
+            <td>
+              <button class="bottoni" (click)=update(openjob)>Modifica</button>
+            </td>
+            <td>
+              <button class="bottoni"(click)="delete(openjob)">Delete</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-1">
+
+        </div>
+      
+    </div>
+  </div>
+  

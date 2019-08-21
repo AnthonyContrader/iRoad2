@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row mt-5">
+      <div class="col-md-10">
+        <table>
+          <tr>
+            <th>
+              Username
+            </th>
+            <th>
+              Password
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+                Surname
+              </th>
+              <th>
+                Age
+              </th>
+              <th>
+                Tipolaurea
+              </th>
+              <th>
+                  Experience
+                </th>
+            <th colspan="2">
+              
+            </th>
+          </tr>
+          <tr *ngFor="let candidato of candidato">
+            <td>
+              <input [(ngModel)]="candidato.username">
+            </td>
+            <td>
+              <input [(ngModel)]="candidato.password">
+            </td>
+            <td>
+                <input [(ngModel)]="candidato.name">
+              </td>
+              <td>
+                <input [(ngModel)]="candidato.surname">
+              </td>
+              <td>
+                  <input [(ngModel)]="candidato.age">
+                </td>
+                <td>
+                  <input [(ngModel)]="candidato.tipolaurea">
+                </td>
+                <td>
+                    <input [(ngModel)]="candidato.experience">
+                  </td>
+            <td>
+              <button class ="bottoni" (click)=update(candidato)>Modifica</button>
+            </td>
+            <td>
+              <button class ="bottoni"(click)="delete(candidato)">Delete</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+  </div>

@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="row row1">
+    <div class="col-md-3">
+        <img src="../../assets/logo.svg" alt="logo">
+    </div>
+    <div class="col-md-9">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="titolo">D R E A M   J O B</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div class="row row2">
+      <div class="col-md-8">
+          <br>
+          <br>
+          <br>
+          <br>
+        <p>Please insert username, email and password to register</p>
+        <br>
+        
+        <td>
+          <input placeholder="username" [(ngModel)]="usertoinsert.login">
+        </td>
+        <td>
+          <input placeholder="email" [(ngModel)]="usertoinsert.email">
+        </td>
+        <td>
+          <input placeholder="password" [(ngModel)]="usertoinsert.password">
+        </td>
+        <td>
+          <select multiple="multiple" placeholder="authorities" [(ngModel)]="usertoinsert.authorities">
+            <option value="ROLE_ADMIN">ADMIN</option>
+            <option value="ROLE_COMPANY">COMPANY</option>
+            <option value="ROLE_CANDIDATO">CANDIDATO</option>
+          </select>
+        </td>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <br>
+          <br>
+          <br>
+          <button type="submit" class="pulsante btn-primary btn-lg" (click)="register()">Registrazione</button>
+        
+        </div>
+      </div>
+  </div>
+</div>

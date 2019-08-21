@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row row1">
+    <div class="col-md-3">
+        <img src="../../assets/logo.svg" alt="logo">
+    </div>
+    <div class="col-md-9">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="titolo">D R E A M   J O B</p>
+    </div>
+  </div>
+  <div class="row row2">
+    <form #f="ngForm">
+      <div class="col-md-6">
+        <p>Please insert username and password to Login</p>
+        <br>
+        <div class="form-group">
+          <input class="form-control" type="text" id="user" name="username" placeholder="Username" ngModel>
+          <br>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="password" id="pass" name="password" placeholder="Password" ngModel>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../../assets/instagram.jpg" alt="instagram">
+          </div>
+          <div class="col-md-4">
+            <img src="../../assets/Facebook_logo.jpg" alt="Facebook_logo">
+          </div>
+          <div class="col-md-4">
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="pulsante btn-primary btn-lg" (click)="login(f)">Login</button>
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="pulsante btn-primary btn-lg" (click)="register()">Registrazione</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

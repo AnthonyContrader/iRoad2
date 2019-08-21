@@ -1,0 +1,56 @@
+*{
+    text-align: center;
+}
+
+/*Tables*/
+table {
+	border-collapse: collapse;
+	width: 70%;
+	float: left;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+th, td {
+	width:20px;
+	text-align: center;
+	padding: 2px;
+}
+
+td{
+    font-size: 15px;
+}
+
+
+tr:nth-child(even) {
+	background-color: #d5d2f5;
+}
+
+tr {
+	background-color: #d5d2f5;
+}
+
+th {
+	background-color: rgba(21, 19, 129, 0.938);
+	color: #ffffff;
+}
+
+a:hover {
+	color: #999999;
+}
+
+input, select{
+    background-color: inherit;
+    font-size: inherit;
+}
+
+input:hover,  input:active, input:focus{
+    border: 2px solid crimson;
+}
+
+button:hover{
+    background-color: crimson;
+}
+    .bottoni{
+		background-color: white;
+	}

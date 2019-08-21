@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+      <div class="sidenav">
+          <button class="menubtn">
+              <a [routerLink]="['/candidato-dashboard']"> <i class="fas fa-home" style="margin-right: 10px"> </i>
+                  Dashboard </a>
+          </button>
+
+          <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#profilocandidato"
+              (click)="profilocandidatocollapse()">
+              <i class="fas fa-user" style="margin-right: 15px"></i> Candidato Profilo
+          </button>
+          <div class="collapsebtn" id="account" *ngIf="isProfilocandidatoCollapsed">
+              <button class="menubtn" style="background-color: #334247; padding-left: 40px">
+                  <a [routerLink]="['/candidato-dashboard/profilocandidato']"> <i class="fas fa-user-edit"
+                          style="margin-right: 15px"></i>
+                      Manage Profilo</a>
+              </button>
+          </div>
+
+          <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#questionary"
+              (click)="questionarycollapse()">
+              <i class="fas fa-user" style="margin-right: 15px"></i> Questionary
+          </button>
+          <div class="collapsebtn" id="account" *ngIf="isQuestionaryCollapsed">
+              <button class="menubtn" style="background-color: #334247; padding-left: 40px">
+                  <a [routerLink]="['/candidato-dashboard/questionary']"> <i class="fas fa-user-edit"
+                          style="margin-right: 15px"></i>
+                      Compila Questionary</a>
+              </button>
+          </div>
+
+          <button class="menubtn" (click)="logout()">
+              <i class="fas fa-sign-out-alt" style="margin-right: 15px"></i>Logout
+          </button>
+      </div>
+  </div>
+</div>

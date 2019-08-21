@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "candidato",
+            "otherEntityName": "candidato",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "questionary"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20190725172704",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "questionary",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "Micro1"
+}

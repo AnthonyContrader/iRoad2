@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-md-1">
+
+        </div>
+    <div class="col-md-10">
+      <table>
+        <tr>
+          <th>
+            Username
+          </th>
+          <th>
+            Password
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+              Info
+            </th>
+          <th colspan="2">
+            
+          </th>
+        </tr>
+        <tr *ngFor="let company of company">
+          <td>
+            <input [(ngModel)]="company.username">
+          </td>
+          <td>
+            <input [(ngModel)]="company.password">
+          </td>
+          <td>
+              <input [(ngModel)]="company.name">
+            </td>
+            <td>
+              <input [(ngModel)]="company.info">
+            </td>
+          <td>
+            <button class = "bottoni" (click)=update(company)>Modifica</button>
+          </td>
+          <td>
+            <button class = "bottoni" (click)="delete(company)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

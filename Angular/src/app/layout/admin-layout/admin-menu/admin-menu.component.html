@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="sidenav">
+            <button class="menubtn">
+                <a [routerLink]="['/admin-dashboard']"> <i class="fas fa-home" style="margin-right: 10px"> </i>
+                    Dashboard </a>
+            </button>
+
+            <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#candidato"
+                (click)="candidatocollapse()">
+                <i class="fas fa-user" style="margin-right: 15px"></i> Lista Candidati
+            </button>
+            <div class="collapsebtn" id="account" *ngIf="isCandidatoCollapsed">
+                <button class="menubtn" style="background-color: #334247; padding-left: 40px">
+                    <a [routerLink]="['/admin-dashboard/candidato']"> <i class="fas fa-user-edit"
+                            style="margin-right: 15px"></i>
+                        Manage Candidato</a>
+                </button>
+            </div>
+
+            <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#company"
+                (click)="companycollapse()">
+                <i class="fas fa-user" style="margin-right: 15px"></i> Lista Aziende
+            </button>
+            <div class="collapsebtn" id="account" *ngIf="isCompanyCollapsed">
+                <button class="menubtn" style="background-color: #334247; padding-left: 40px">
+                    <a [routerLink]="['/admin-dashboard/company']"> <i class="fas fa-user-edit"
+                            style="margin-right: 15px"></i>
+                        Manage Company</a>
+                </button>
+            </div>
+
+            <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#openjob"
+                (click)="openjobcollapse()">
+                <i class="fas fa-user" style="margin-right: 15px"></i>Lista Openjob
+            </button>
+            <div class="collapsebtn" id="account" *ngIf="isOpenjobCollapsed">
+                <button class="menubtn" style="background-color: #334247; padding-left: 40px">
+                    <a [routerLink]="['/admin-dashboard/openjob']"> <i class="fas fa-user-edit"
+                            style="margin-right: 15px"></i>
+                        Manage Openjob</a>
+                </button>
+            </div>
+            
+            <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#users"
+                (click)="userscollapse()">
+                <i class="fas fa-users" style="margin-right: 15px"></i>Utenti
+            </button>
+            <div class="collapsebtn" id="users" *ngIf="isUserCollapsed">
+                <button class="menubtn" style="padding-left: 40px; background-color: #334247;">
+                    <a [routerLink]="['/admin-dashboard/users']"> <i class="fas fa-edit" style="margin-right: 10px">
+                        </i> Manage Utenti </a>
+                </button>
+            </div>
+
+            <button class="menubtn" (click)="logout()">
+                <i class="fas fa-sign-out-alt" style="margin-right: 15px"></i>Logout
+            </button>
+        </div>
+    </div>
+</div>

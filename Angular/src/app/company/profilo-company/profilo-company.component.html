@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-1">
+      
+    </div>
+    <div class="col-md-11">
+      <table>
+        <tr>
+          <th>
+            Info
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Password
+          </th>
+          <th>
+              Username
+            </th>
+
+          <th colspan="2">
+            
+          </th>
+        </tr>
+        <tr *ngIf="company.id != null">
+          <td>
+            <input [(ngModel)]="company.info">
+          </td>
+          <td>
+            <input [(ngModel)]="company.name">
+          </td>
+          <td>
+              <input [(ngModel)]="company.password">
+            </td>
+            <td>
+              <input [(ngModel)]="company.username">
+            </td>
+            
+          <td>
+            <button class="bottoni"(click)=update(company)>Inserisci/Modifica</button>
+          </td>
+          <td>
+            <button class="bottoni" (click)="delete(company)">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,7 @@
+*{
+    overflow: hidden;
+}
+.barra{
+    background-color:   rgba(12, 12, 129, 0.822);
+    color: white;
+}

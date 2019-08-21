@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "domandaUno",
+            "fieldType": "DomandaUno",
+            "fieldValues": "DOMANDAUNOOPZIONEUNO,DOMANDAUNOOPZIONEDUE,DOMANDAUNOOPZIONETRE,DOMANDAUNOOPZIONEQUATTRO"
+        },
+        {
+            "fieldName": "domandaDue",
+            "fieldType": "DomandaDue",
+            "fieldValues": "DOMANDADUEOPZIONEUNO,DOMANDADUEOPZIONEDUE,DOMANDADUEOPZIONETRE,DOMANDADUEOPZIONEQUATTRO"
+        },
+        {
+            "fieldName": "domandaSette",
+            "fieldType": "DomandaSette",
+            "fieldValues": "DOMANDASETTEOPZIONEUNO,DOMANDASETTEOPZIONEDUE,DOMANDASETTEOPZIONETRE,DOMANDASETTEOPZIONEQUATTRO"
+        },
+        {
+            "fieldName": "domandaTre",
+            "fieldType": "DomandaTre",
+            "fieldValues": "DOMANDATREOPZIONEUNO,DOMANDATREOPZIONEDUE,DOMANDATREOPZIONETRE,DOMANDATREOPZIONEQUATTRO"
+        },
+        {
+            "fieldName": "domandaQuattro",
+            "fieldType": "DomandaQuattro",
+            "fieldValues": "DOMANDAQUATTROOPZIONEUNO,DOMANDAQUATTROOPZIONEDUE,DOMANDAQUATTROOPZIONETRE,DOMANDAQUATTROOPZIONEQUATTRO"
+        },
+        {
+            "fieldName": "domandaCinque",
+            "fieldType": "DomandaCinque",
+            "fieldValues": "DOMANDACINQUEOPZIONEUNO,DOMANDACINQUEOPZIONEDUE"
+        },
+        {
+            "fieldName": "domandaSei",
+            "fieldType": "DomandaSei",
+            "fieldValues": "DOMANDASEIOPZIONEUNO,DOMANDASEIOPZIONEDUE"
+        }
+    ],
+    "changelogDate": "20190717085740",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "questionary",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "Micro2"
+}
