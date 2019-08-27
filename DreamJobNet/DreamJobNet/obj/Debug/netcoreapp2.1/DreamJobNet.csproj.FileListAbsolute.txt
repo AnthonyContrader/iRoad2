@@ -1,0 +1,14 @@
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.csproj.CoreCompileInputs.cache
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.RazorAssemblyInfo.cache
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.RazorAssemblyInfo.cs
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.AssemblyInfoInputs.cache
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.AssemblyInfo.cs
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\bin\Debug\netcoreapp2.1\DreamJobNet.deps.json
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\bin\Debug\netcoreapp2.1\DreamJobNet.runtimeconfig.json
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\bin\Debug\netcoreapp2.1\DreamJobNet.runtimeconfig.dev.json
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\bin\Debug\netcoreapp2.1\DreamJobNet.dll
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\bin\Debug\netcoreapp2.1\DreamJobNet.pdb
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.RazorTargetAssemblyInfo.cache
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.dll
+C:\Users\utente2\Desktop\DreamJobNet\DreamJobNet\obj\Debug\netcoreapp2.1\DreamJobNet.pdb
