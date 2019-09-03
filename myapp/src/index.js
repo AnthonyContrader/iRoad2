@@ -9,9 +9,9 @@ import {
 } from 'react-router-dom'
 import App from './App'
 import Company from './Company'
-
-
+import Login from './Login'
 import Candidato from './Candidato';
+
 const routing = (
   <Router>
     <div>
@@ -31,12 +31,18 @@ const routing = (
             Candidato
           </NavLink>
         </li>
+        <li>
+        <NavLink activeClassName="active" to="/Login">
+            Login
+          </NavLink>
+        </li>
       </ul>
       <hr />
       <Switch>
         <Route exact path="/App" component={App} />
         <Route path="/Candidato" component={Candidato} />
         <Route path="/Company" component={Company} />
+        <Route path="/Login" component={Login} />
        
       </Switch>
     </div>
