@@ -8,8 +8,7 @@ export default class Footer extends Component {
     <div className="pull-right hidden-xs">
       <b>Version</b> 2.4.13
     </div>
-    <strong>Benvenuti su DramJob, la piattaforma dove trovare lavoro è facile c <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
-    reserved.
+    Benvenuti su DramJob, la piattaforma dove trovare lavoro è facile,veloce e divertente
   </footer>
 </div>
 
